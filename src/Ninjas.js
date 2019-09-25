@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Ninjas = (props) => {
+const Ninjas = ({ninjas}) => {
     // console.log(this.props);
     // const { name, age, belt } = this.props; //destructing
-    const { ninjas } = props; // is same as "const ninjas = this.props.ninjas"
+    // const { ninjas } = props; // is same as "const ninjas = this.props.ninjas"
     const ninjaList = ninjas.map(ninja => {
       return (
         <div className="ninja" key={ninja.id}>

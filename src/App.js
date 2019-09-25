@@ -9,6 +9,7 @@ class App extends Component {
       { name: 'Crystal', age: 25, belt: 'pink', id: 3 }
     ]
   }
+  
   render() {
     return (
       <div className="App">
