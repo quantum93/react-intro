@@ -15,13 +15,18 @@ class App extends Component {
     // console.log(ninja);
     ninja.id = Math.random(); // just arbitary id number
     let ninjas = [...this.state.ninjas, ninja]
-    this.setState({ ninjas: ninjas }) 
+    this.setState({ ninjas: ninjas })
   }
 
+  deleteNinja = (id) => {
+    // console.log(id)
+    let ninjas = this.state.ninjas.filter(ninja => { return ninja.id !== id }) //non-destructive filtering of array data in state.
+    this.setState({ ninjas: ninjas })
+  }
   render() {
     return (
       <div className="App">
-      <Ninjas ninjas={this.state.ninjas}/>
+      <Ninjas deleteNinja={this.deleteNinja} ninjas={this.state.ninjas}/>
       <AddNinja addNinja={this.addNinja}/>
       </div>
     );

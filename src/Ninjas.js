@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Ninjas = ({ninjas}) => {
+const Ninjas = ( {ninjas, deleteNinja} ) => {
   return(
     <div className="ninja-list">
     {
@@ -10,6 +10,8 @@ const Ninjas = ({ninjas}) => {
           <div>Name: {ninja.name}</div>
           <div>Age: {ninja.age}</div>
           <div>Belt: {ninja.belt}</div>
+          {/* use fat arrow function in order to prevent automatic firing of deleteNinja function */}
+          <button onClick={() => {deleteNinja(ninja.id)}}>Delete ninja</button>
           </div>
         ) : null;
       })
