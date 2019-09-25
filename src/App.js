@@ -23,6 +23,16 @@ class App extends Component {
     let ninjas = this.state.ninjas.filter(ninja => { return ninja.id !== id }) //non-destructive filtering of array data in state.
     this.setState({ ninjas: ninjas })
   }
+
+  componentDidMount() {
+    console.log('component mounted');
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('component updated');
+    console.log(prevProps, prevState);
+  }
+  
   render() {
     return (
       <div className="App">
