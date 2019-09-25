@@ -19,3 +19,6 @@ What is stateless Component?
 
 ## lesson-16
 Conditional Output
+
+## lesson-18
+how to update array of state from form (AddNinja) action?

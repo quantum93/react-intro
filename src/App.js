@@ -11,11 +11,15 @@ class App extends Component {
     ]
   }
 
+  addNinja = (ninja) => {
+    console.log(ninja);
+  }
+
   render() {
     return (
       <div className="App">
       <Ninjas ninjas={this.state.ninjas}/>
-      <AddNinja />
+      <AddNinja addNinja={this.addNinja}/>
       </div>
     );
   }
