@@ -16,3 +16,6 @@ That means an object of key-value pair.
 
 ## lesson-15
 What is stateless Component?
+
+## lesson-16
+Conditional Output
