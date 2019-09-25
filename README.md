@@ -12,4 +12,4 @@ This is nested Component example
 ## lesson-13
 What is props in React?
 <Ninjas name="Ryu" age="25" belt="black"/> is giving in form of {name: "Ryu", age: "25", belt: "black"}.
-That means an object of key-value pair.
+That means an object of key-value pair. 
