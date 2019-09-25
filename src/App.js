@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ninjas from './Ninjas';
+import AddNinja from './AddNinja';
 
 class App extends Component {
   state = {
@@ -9,11 +10,12 @@ class App extends Component {
       { name: 'Crystal', age: 25, belt: 'pink', id: 3 }
     ]
   }
-  
+
   render() {
     return (
       <div className="App">
       <Ninjas ninjas={this.state.ninjas}/>
+      <AddNinja />
       </div>
     );
   }
